@@ -86,13 +86,23 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Delete button styling */
+/* Delete and edit button styling */
 li button {
     background: #d9534f;
     border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
-li button:hover {
+li .edit-btn {
+    background: #5bc0de;
+}
+
+li .edit-btn:hover {
+    background: #31b0d5;
+}
+
+li .delete-btn:hover {
     background: #c9302c;
 }
 

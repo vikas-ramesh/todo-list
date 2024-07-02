@@ -1,0 +1,117 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with gradient background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container card styling */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Header styling */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #5cb85c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+/* List container styling */
+#list-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for individual list items */
+#list-container li {
+    background: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Delete button styling */
+li button {
+    background: #d9534f;
+    border-radius: 3px;
+}
+
+li button:hover {
+    background: #c9302c;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    input {
+        width: 60%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+    li {
+        padding: 8px 12px;
+    }
+}
